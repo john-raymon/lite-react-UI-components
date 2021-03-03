@@ -6,7 +6,7 @@ import path from 'path';
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/main.jsx'),
+      entry: path.resolve(__dirname, 'src/index.js'),
       name: 'react-tailwind-components'
     },
   },

@@ -13,9 +13,9 @@ function App() {
       <ul>
         <li>
           <p>Textfield component</p>
-          <TextField placeholder="" className="p-4 mt-10 mb-8 bg-red-100 rounded-md" inputClassName="text-xl" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
-          <TextField placeholder="" className="text-sm px-10 py-20 mb-8 bg-black text-white rounded-md" label="password" type="password" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
-          <TextField placeholder="With Placeholder" className="px-4 py-10" labelClassName="text-sm" value={textValueWithPlaceholder} onChange={(event) => setTextValueWithPlaceholder(event.target.value)} />
+          <TextField placeholder="" className="mt-10 mb-8 bg-red-100 rounded-md" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+          <TextField placeholder="" className="text-sm mb-8 bg-black text-white rounded-md" label="password" type="password" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+          <TextField placeholder="With red placeholder" inputClassName="placeholder-red-500" labelClassName="text-sm" value={textValueWithPlaceholder} onChange={(event) => setTextValueWithPlaceholder(event.target.value)} />
         </li>
       </ul>
     </div>

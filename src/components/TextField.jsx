@@ -1,10 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import '../assets/styles/textfield.css';
 
-export default function TextField({ className = '', type = 'text', onChange, value = '' }) {
+export default function TextField({ id = '', className = '', type = 'text', onChange, value = '', disabled = false, label = "label", placeholder }) {
+  // https://stackoverflow.com/a/65901743/8320709 placeholder trick
+  function hasPlaceholder() {
+    return placeholder !== undefined && placeholder.length > 0;
+  };
   return (
-    <div className={`relative ${className}`}>
-      <input type={type} value={value} onChange={onChange} />
+    <div id={id} className={`text-field ${className} ${(disabled ? 'text-field__disabled' : '')}`}>
+      <input id="current-id" className={`text-field__input ${hasPlaceholder() ? 'text-field__input--has-placeholder' : 'text-field__input--has-no-placeholder'}`} type={type} value={value} onChange={onChange} disabled={disabled} placeholder={hasPlaceholder() ? placeholder : ' '} />
+      <label
+        className="text-field__label"
+        htmlFor="current-id"
+      >
+        { label }
+      </label>
     </div>
   )
 }

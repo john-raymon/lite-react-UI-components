@@ -9,6 +9,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/index.js'),
       name: 'react-tailwind-components'
     },
+    cssCodeSplit: false,
   },
   plugins: [reactRefresh()]
 })

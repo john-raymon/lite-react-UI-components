@@ -1,11 +1,12 @@
 .text-field {
-  @apply relative px-4 py-2;
+  @apply relative;
 
   &__label {
     @apply 
     absolute top-0 left-0 h-full
     pointer-events-none 
     flex items-center
+    ml-4
     leading-tight text-gray-500 
     transition-transform duration-150 
     origin-top-left;
@@ -17,7 +18,7 @@
   }
 
   &__input {
-    @apply pb-2 pt-6 w-full outline-none bg-transparent;
+    @apply pb-3 pt-6 ml-4 w-full outline-none bg-transparent;
     &--has-no-placeholder {
       &:placeholder-shown {
         ~ .text-field__label {

@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  prefix: 'twr-', // TailwindReact twr prefix
+  purge: [
+    './src/**/*.jsx',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},

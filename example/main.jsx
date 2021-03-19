@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import ReactDOM from 'react-dom'
-import { TextField, TextArea } from '../src/index';
+import { TextField, TextArea, Navigation } from '../src/index';
 
 function App() {
   const [textValue, setTextValue] = useState('');
@@ -9,6 +9,11 @@ function App() {
   return (
     <div className="twr-p-10">
       <ul class="twr-space-y-5">
+        <li>
+          <Navigation className="twr-w-1/2" />
+          <Navigation className="twr-w-1/4" />
+          <Navigation className="twr-w-full" />
+        </li>
         <li class="twr-space-y-4">
           <p>{`<TextField>`} component:</p>
           <TextField value={textValue} onChange={(event) => setTextValue(event.target.value)} />

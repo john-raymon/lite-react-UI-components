@@ -3,7 +3,7 @@
 
   &__label {
     @apply 
-    twr-absolute twr-top-0 twr-left-0
+    twr-absolute twr-top-0 twr-left-0 
     twr-pointer-events-none 
     twr-flex twr-items-center
     twr-ml-4 twr-h-full
@@ -18,18 +18,30 @@
   }
 
   &__input {
-    @apply twr-pb-3 twr-pt-6 twr-ml-4 twr-w-full twr-h-full twr-outline-none twr-bg-transparent;
+    @apply twr-pb-4 twr-pt-8 twr-px-4 twr-w-full twr-h-full 
+    twr-shadow-xl
+    twr-outline-none twr-bg-transparent twr-rounded-xl twr-border twr-border-gray-400;
     &--as-textarea {
-      @apply twr-pt-10;
-      + .text-field__label {
-        @apply twr-h-4/5;
+      min-height: 8rem;
+      ~ .text-field__label {
+        @apply twr-pt-8 twr-max-h-10;
       }
     }
     &--has-no-placeholder {
-      &:placeholder-shown {
-        ~ .text-field__label {
-          @apply twr-h-full;
-          transform: scale(1, 1);
+      &:not(.text-field__input--as-textarea) {
+        &:placeholder-shown {
+          ~ .text-field__label {
+            @apply twr-h-full;
+            transform: scale(1, 1);
+          }
+        }
+      }
+      &.text-field__input--as-textarea {
+        &:placeholder-shown {
+          ~ .text-field__label {
+            @apply twr-pt-8 twr-max-h-10;
+            transform: scale(1, 1);
+          }
         }
       }
     }
@@ -38,6 +50,7 @@
   &:not(.text-field--disabled) .text-field__input {
     &:focus,
     &:active {
+      @apply twr-border-gray-700 twr-shadow-lg;
       ~ .text-field__label {
         transform: translate(0.05rem, -0.5rem) scale(0.8, 0.8);
       }
@@ -48,7 +61,7 @@
     &:focus,
     &:active {
       ~ .text-field__label {
-        @apply twr-h-4/5;
+        @apply twr-pt-8;
         transform: translate(0.05rem, -0.5rem) scale(0.8, 0.8);
       }
     }

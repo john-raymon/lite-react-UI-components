@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import ReactDOM from 'react-dom'
-import '../src/assets/styles/tailwind.css';
 import { TextField, TextArea } from '../src/index';
 
 function App() {
@@ -8,16 +7,20 @@ function App() {
   const [textValueWithPlaceholder, setTextValueWithPlaceholder] = useState('');
   // WIP 
   return (
-    <div className="twr-p-10 twr-bg-red-300">
+    <div className="twr-p-10">
       Components:
       <ul>
         <li>
           <p>Textfield component</p>
-          <TextField inputClassName="twr-bg-red-100" className="twr-mt-10 twr-mb-8 twr-bg-red-100 twr-rounded-md" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+          <TextField className="twr-mt-10" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+          <TextField placeholder="placeholder" className="twr-mt-10" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+
         </li>
         <li>
           <p>TextArea component</p>
-          <TextField type="textarea" inputClassName="twr-bg-red-100 twr-rounded-md" className="twr-mt-10 twr-mb-8 twr-bg-red-100 twr-rounded-md" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+          <TextField type="textarea" className="twr-mt-10 twr-mb-8" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+          <TextField type="textarea" placeholder="placeholder" className="twr-mt-10 twr-mb-8" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+
         </li>
       </ul>
     </div>

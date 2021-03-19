@@ -1,3 +1,4 @@
 .twr-navigation {
-  @apply twr-relative twr-p-4 twr-shadow-2xl twr-rounded-2xl twr-w-full;
+  @apply twr-relative twr-flex twr-p-4 twr-shadow-2xl twr-rounded-2xl;
+  min-width: min-content;
 }

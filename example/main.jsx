@@ -9,10 +9,12 @@ function App() {
   return (
     <div className="twr-p-10">
       <ul class="twr-space-y-5">
-        <li>
-          <Navigation className="twr-w-1/2" />
-          <Navigation className="twr-w-1/4" />
-          <Navigation className="twr-w-full" />
+        <li className="twr-flex twr-items-center twr-flex-wrap md:twr-flex-nowrap">
+          <Navigation onNavLinkClick={() => alert('clicked')} className="twr-w-1/2" />
+          <Navigation className="twr-w-2/3" />
+          <div className="twr-flex">
+            <Navigation />
+          </div>
         </li>
         <li class="twr-space-y-4">
           <p>{`<TextField>`} component:</p>

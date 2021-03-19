@@ -6,12 +6,12 @@ export default function Navigation({ LinkComponent, navLinks = [], className = '
   const navItemClassName = 'twr-flex twr-w-full twr-justify-center twr-text-center twr-px-8 twr-py-3 twr-text-white twr-bg-black twr-rounded-full hover:twr-bg-gray-900 twr-shadow-lg hover:twr-shadow-md';
   const navActiveItemClassName = 'twr-bg-gray-800 twr-font-medium'
   return (
-    <nav className={`twr-navigation ${className}`}>
-      <ul className={`twr-max-w-full twr-px-4 twr-flex twr-flex-col twr-flex-wrap sm:twr-flex-row twr-w-full ${stacked || columns ? 'sm:twr-flex-col' : ''}`}>
+    <nav className={`twr-navigation twr-max-w-full ${className}`}>
+      <ul className={`twr-flex twr-max-w-full twr-overflow-scroll twr-px-4 twr-flex-row twr-w-full ${stacked || columns ? 'twr-flex-col' : ''}`}>
         {
           navLinks.map(({ render, label, onClick, active }) => {
             return (
-              <li className="twr-flex twr-mx-2 twr-py-2 twr-flex-grow">
+              <li className="twr-flex twr-mx-2 twr-py-2 twr-flex-grow twr-flex-shrink-0">
                 {
                   render && typeof render === 'function' ? 
                     (

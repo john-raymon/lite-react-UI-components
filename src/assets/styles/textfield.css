@@ -59,14 +59,4 @@
       }
     }
   }
-
-  &:not(.text-field--disabled) .text-field__input--as-textarea {
-    &:focus,
-    &:active {
-      ~ .text-field__label {
-        @apply twr-pt-8;
-        transform: translate(0.05rem, -0.5rem) scale(0.8, 0.8);
-      }
-    }
-  }
 }

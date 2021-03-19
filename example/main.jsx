@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom'
 import { TextField, TextArea, Navigation } from '../src/index';
 const _navLinks = [
   {
-    label: 'first one',
+    label: 'first one one one one one one one',
     onClick: () => alert('this was clicked'),
     active: true,
   },
   {
     label: 'second one',
     render: (props) => {
-      return (<a {...props} href="from-render-function" >testing</a>)
+      return (<a {...props} href="from-render-function" >testing one</a>)
     },
   },
   {
@@ -27,9 +27,9 @@ function App() {
   return (
     <div className="twr-p-10">
       <ul class="twr-space-y-5">
-        <li className="twr-flex twr-flex-col twr-items-end twr-flex-wrap md:twr-flex-nowrap">
-          <Navigation onNavLinkClick={() => alert('clicked')} className="twr-max-w-1/2" navLinks={_navLinks} />
-          <Navigation onNavLinkClick={() => alert('clicked')} className="twr-max-w-1/2" navLinks={_navLinks} stacked/>
+        <li className="twr-flex twr-flex-col twr-items-end">
+          <Navigation onNavLinkClick={() => alert('clicked')} navLinks={_navLinks} />
+          <Navigation onNavLinkClick={() => alert('clicked')} className="twr-w-full" navLinks={_navLinks} stacked/>
         </li>
         <li class="twr-space-y-4">
           <p>{`<TextField>`} component:</p>

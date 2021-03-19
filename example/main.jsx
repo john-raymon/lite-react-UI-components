@@ -10,16 +10,16 @@ function App() {
     <div className="twr-p-10">
       Components:
       <ul>
-        <li>
+        <li class="twr-space-y-4">
           <p>Textfield component</p>
-          <TextField className="twr-mt-10" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
-          <TextField placeholder="placeholder" className="twr-mt-10" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+          <TextField value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+          <TextField placeholder="placeholder" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
 
         </li>
-        <li>
+        <li class="twr-space-y-4">
           <p>TextArea component</p>
-          <TextField type="textarea" className="twr-mt-10 twr-mb-8" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
-          <TextField type="textarea" placeholder="placeholder" className="twr-mt-10 twr-mb-8" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+          <TextField type="textarea" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+          <TextField type="textarea" placeholder="placeholder" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
 
         </li>
       </ul>

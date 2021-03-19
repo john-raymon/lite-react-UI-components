@@ -18,15 +18,17 @@
   }
 
   &__input {
-    @apply twr-pb-4 twr-pt-8 twr-px-4 twr-w-full twr-h-full 
+    @apply twr-w-full twr-h-full 
     twr-shadow-xl
     twr-outline-none twr-bg-transparent twr-rounded-xl twr-border twr-border-gray-400;
+    padding: 2rem 1rem 1rem 1rem;
     &--as-textarea {
       min-height: 8rem;
       ~ .text-field__label {
         @apply twr-pt-8 twr-max-h-10;
       }
     }
+
     &--has-no-placeholder {
       &:not(.text-field__input--as-textarea) {
         &:placeholder-shown {
@@ -50,7 +52,8 @@
   &:not(.text-field--disabled) .text-field__input {
     &:focus,
     &:active {
-      @apply twr-border-gray-700 twr-shadow-lg;
+      @apply twr-border-gray-700 twr-border-2 twr-shadow-lg;
+      padding: calc(2rem - 1px) calc(1rem - 1px) calc(1rem - 1px) calc(1rem - 1px); /* offset 1px sides from increasing border-width border-1 border-2 */
       ~ .text-field__label {
         transform: translate(0.05rem, -0.5rem) scale(0.8, 0.8);
       }

@@ -1,27 +1,34 @@
 .text-field {
-  @apply relative;
+  @apply twr-relative;
 
   &__label {
     @apply 
-    absolute top-0 left-0 h-full
-    pointer-events-none 
-    flex items-center
-    ml-4
-    leading-tight text-gray-500 
-    transition-transform duration-150 
-    origin-top-left;
+    twr-absolute twr-top-0 twr-left-0
+    twr-pointer-events-none 
+    twr-flex twr-items-center
+    twr-ml-4 twr-h-full
+    twr-leading-tight twr-text-gray-500 
+    twr-transition-transform twr-duration-150 
+    twr-origin-top-left;
     transform: translate(0.05rem, -0.5rem) scale(0.8, 0.8);
   }
   
   &--disabled {
-    @apply opacity-10;
+    @apply twr-opacity-10;
   }
 
   &__input {
-    @apply pb-3 pt-6 ml-4 w-full outline-none bg-transparent;
+    @apply twr-pb-3 twr-pt-6 twr-ml-4 twr-w-full twr-h-full twr-outline-none twr-bg-transparent;
+    &--as-textarea {
+      @apply twr-pt-10;
+      + .text-field__label {
+        @apply twr-h-4/5;
+      }
+    }
     &--has-no-placeholder {
       &:placeholder-shown {
         ~ .text-field__label {
+          @apply twr-h-full;
           transform: scale(1, 1);
         }
       }
@@ -32,6 +39,16 @@
     &:focus,
     &:active {
       ~ .text-field__label {
+        transform: translate(0.05rem, -0.5rem) scale(0.8, 0.8);
+      }
+    }
+  }
+
+  &:not(.text-field--disabled) .text-field__input--as-textarea {
+    &:focus,
+    &:active {
+      ~ .text-field__label {
+        @apply twr-h-4/5;
         transform: translate(0.05rem, -0.5rem) scale(0.8, 0.8);
       }
     }

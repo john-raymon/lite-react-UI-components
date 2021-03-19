@@ -1,21 +1,23 @@
 import React, {useState} from 'react'
 import ReactDOM from 'react-dom'
 import '../src/assets/styles/tailwind.css';
-import { TextField } from '../src/index';
+import { TextField, TextArea } from '../src/index';
 
 function App() {
   const [textValue, setTextValue] = useState('');
   const [textValueWithPlaceholder, setTextValueWithPlaceholder] = useState('');
-
+  // WIP 
   return (
-    <div className="p-10 bg-red-300">
+    <div className="twr-p-10 twr-bg-red-300">
       Components:
       <ul>
         <li>
           <p>Textfield component</p>
-          <TextField placeholder="" className="mt-10 mb-8 bg-red-100 rounded-md" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
-          <TextField placeholder="" className="text-lg mb-8 bg-black text-white rounded-md" label="password" type="password" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
-          <TextField placeholder="With red placeholder" inputClassName="placeholder-red-500" labelClassName="text-sm" value={textValueWithPlaceholder} onChange={(event) => setTextValueWithPlaceholder(event.target.value)} />
+          <TextField inputClassName="twr-bg-red-100" className="twr-mt-10 twr-mb-8 twr-bg-red-100 twr-rounded-md" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
+        </li>
+        <li>
+          <p>TextArea component</p>
+          <TextField type="textarea" inputClassName="twr-bg-red-100 twr-rounded-md" className="twr-mt-10 twr-mb-8 twr-bg-red-100 twr-rounded-md" value={textValue} onChange={(event) => setTextValue(event.target.value)} />
         </li>
       </ul>
     </div>

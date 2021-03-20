@@ -1,5 +1,5 @@
 {
-  "name": "react-components",
+  "name": "lite-react-ui",
   "version": "0.1.2",
   "homepage": "https://github.com/john-raymon/react-components",
   "author": "john-raymon",
@@ -7,12 +7,12 @@
     "type": "git",
     "url": "git+https://github.com/john-raymon/react-components.git"
   },
-  "main": "./dist/react-components.umd.js",
-  "module": "./dist/react-components.es.js",
+  "main": "./dist/lite-react-ui.umd.js",
+  "module": "./dist/lite-react-ui.es.js",
   "exports": {
     ".": {
-      "import": "./dist/react-components.es.js",
-      "require": "./dist/react-components.umd.js"
+      "import": "./dist/lite-react-ui.es.js",
+      "require": "./dist/lite-react-ui.umd.js"
     }
   },
   "scripts": {

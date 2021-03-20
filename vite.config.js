@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.js'),
-      name: 'react-tailwind-components'
+      name: 'lite-react-ui'
     },
     cssCodeSplit: false,
   },

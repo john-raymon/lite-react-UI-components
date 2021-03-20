@@ -1,3 +1,4 @@
 .twr-navigation {
-  @apply twr-relative twr-flex twr-p-4 twr-shadow-2xl twr-rounded-2xl;
+  @apply twr-flex twr-bg-white twr-py-2 twr-px-4 twr-shadow-2xl twr-rounded-2xl;
+  z-index: 30;
 }

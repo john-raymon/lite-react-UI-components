@@ -20,8 +20,14 @@
   &__input {
     @apply twr-w-full twr-h-full 
     twr-shadow-xl
-    twr-outline-none twr-bg-transparent twr-rounded-xl twr-border twr-border-gray-400;
+    twr-outline-none twr-bg-transparent twr-rounded-xl twr-border twr-border-gray-400 twr-transition twr-ease-in twr-duration-300;
     padding: 2rem 1rem 1rem 1rem;
+
+    &:hover {
+      @apply twr-border-gray-700 twr-border-2 twr-shadow-lg;
+      padding: calc(2rem - 1px) calc(1rem - 1px) calc(1rem - 1px) calc(1rem - 1px); /* offset 1px sides from increasing border-width border-1 border-2 */
+    }
+
     &--as-textarea {
       min-height: 8rem;
       ~ .text-field__label {

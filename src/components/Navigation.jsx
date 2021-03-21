@@ -8,7 +8,7 @@ const overrideTW = (classes) => {
 
 export default function Navigation({ LinkComponent, navLinks = [], className = '', onNavLinkClick, stacked = false, columns = false}) {
   // TODO : create a button component to be used here, which will receive it's inner copy as a non-children prop or children (slot)
-  const navItemClassName = 'twr-flex twr-w-full twr-font-semibold twr-text-base twr-justify-center twr-text-center twr-px-8 twr-py-4 twr-text-black focus:twr-outline-none actie:twr-outline-none focus:twr-bg-gray-200 active:twr-bg-gray-200 hover:twr-bg-gray-200 twr-rounded-lg twr-capitalize twr-transition twr-ease-in twr-duration-400';
+  const navItemClassName = 'twr-flex twr-w-full twr-font-semibold twr-text-base twr-justify-center twr-text-center twr-px-8 twr-py-4 twr-text-black focus:twr-outline-none actie:twr-outline-none focus:twr-bg-gray-200 active:twr-bg-gray-200 hover:twr-bg-gray-200 twr-rounded-lg twr-capitalize twr-transition twr-ease-in twr-duration-300';
   const navActiveItemClassName = 'twr-bg-black twr-text-white twr-font-bold twr-shadow-xl hover:twr-bg-gray-800 active:twr-bg-gray-800 focus:twr-bg-gray-800'
   return (
     <nav className={`twr-navigation twr-max-w-full ${className}`}>

@@ -1,10 +1,13 @@
 .twr-navigation {
-  @apply twr-flex twr-bg-white twr-py-2 twr-shadow-2xl twr-rounded-2xl;
+  @apply twr-flex twr-bg-white twr-shadow-2xl twr-rounded-2xl;
   z-index: 30;
   &__ul {
-    @apply twr-px-4;
+    @apply twr-p-4;
+    > li {
+      @apply twr-py-1.5;
+    }
     &:not(&--stacked) {
-      @apply twr-px-0;
+      @apply twr-px-0 twr-py-4;
       > li {
         &:nth-child(1) {
           @apply twr-pl-4;

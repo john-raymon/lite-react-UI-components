@@ -5,13 +5,13 @@ const _navLinks = [
   {
     label: 'This is the Navigation component',
     onClick: () => alert('this was clicked'),
-    active: true,
   },
   {
     label: 'second one',
     render: (props) => {
       return (<a {...props} href="from-render-function" >testing one</a>)
     },
+    active: true,
   },
   {
     label: 'third one'

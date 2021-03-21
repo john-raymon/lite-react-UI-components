@@ -7,7 +7,7 @@ export default function Navigation({ LinkComponent, navLinks = [], className = '
   const navActiveItemClassName = 'twr-bg-gray-800 twr-font-medium'
   return (
     <nav className={`twr-navigation twr-max-w-full ${className}`}>
-      <ul className={`twr-flex twr-max-w-full twr-overflow-scroll twr-flex-row twr-w-full ${stacked || columns ? 'twr-flex-col' : 'twr-rounded-2xl '}`}>
+      <ul className={`twr-navigation__ul twr-flex twr-max-w-full twr-overflow-scroll twr-flex-row twr-w-full ${stacked || columns ? 'twr-navigation__ul--stacked twr-flex-col' : 'twr-rounded-2xl '}`}>
         {
           navLinks.map(({ render, label, onClick, active }) => {
             return (

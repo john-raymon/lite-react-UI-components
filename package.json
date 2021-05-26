@@ -1,6 +1,6 @@
 {
   "name": "lite-react-ui",
-  "version": "0.1.4",
+  "version": "0.1.9",
   "homepage": "https://github.com/john-raymon/lite-react-UI-components",
   "author": "john-raymon",
   "repository": {
@@ -15,8 +15,8 @@
       "require": "./dist/lite-react-ui.umd.js"
     },
     "./css": {
-      "import": "./dist/index.css",
-      "require": "./dist/index.css"
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "scripts": {

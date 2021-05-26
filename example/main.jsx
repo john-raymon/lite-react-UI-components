@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import ReactDOM from 'react-dom'
-import { TextField, TextArea, Navigation } from '../src/index';
+import { TextField, TextArea, Navigation } from '../dist/lite-react-ui.es';
+import '../dist/index.css'; // can also be imported into stylesheet using @import 'lite-react-ui/dist/index.css';
+
 const _navLinks = [
   {
     label: 'This is the Navigation component',

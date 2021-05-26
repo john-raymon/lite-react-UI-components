@@ -9,7 +9,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/index.js'),
       name: 'lite-react-ui'
     },
-    cssCodeSplit: false,
+    cssCodeSplit: true,
   },
   plugins: [reactRefresh()]
 })

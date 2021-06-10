@@ -14,7 +14,8 @@
     "lite-react-ui": "^0.2.0",
     "next": "latest",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-syntax-highlighter": "^15.4.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",

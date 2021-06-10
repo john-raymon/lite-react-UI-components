@@ -1,4 +1,46 @@
 
 
 <br/>
-## welcome
+<br/>
+
+# Getting started
+To get started run npm install or yarn install `lite-react-ui`.
+
+`npm install lite-react-ui`
+<br/>
+
+## Import a component
+```js
+import { TextField } from 'lite-react-ui';
+
+<TextField 
+  placeholder="placeholder" 
+  value={} 
+  onChange={} 
+/>
+```
+<br/>
+
+## Import base styles
+Import the namespaced global CSS for basic styling in your apps root container component
+```js
+// Webpack 4 or less
+import 'lite-react-ui/dist/style.css';
+
+// Webpack 5
+import 'lite-react-ui/css';
+```
+<br/>
+
+You can modify the **font type** used by providing setting 
+your own global font styles or providing a font 
+class to a lite-react-ui component for example.
+```js
+/* some CSS
+.my-own-font-class {
+  font-family: 'Roboto';
+} 
+*/
+<TextField className="my-own-font-class" />
+```
+

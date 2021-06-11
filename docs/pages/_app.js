@@ -8,17 +8,17 @@ import Head from 'next/head'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-const tailwindcssStyledComponents = {
-  p: props => <p className="text-base text-gray-700 my-1" {...props} />,
-  h4: props => <h1 className="text-lg text-bold mb-1 font-sync" {...props} />,
-  h3: props => <h2 className="text-xl text-bold mb-1 font-sync" {...props} />,
-  h2: props => <h1 className="text-2xl text-bold mb-1 font-sync" {...props} />,
-  h1: props => <h1 className="text-3xl text-bold mb-1 font-sync" {...props} />,
-  code: props => <SyntaxHighlighter {...props} className="w-1/2 rounded-md" language="javascript" style={atomDark} />,
-};
 
 function MyApp({ Component, pageProps}) {
   const router = useRouter();
+  const tailwindcssStyledComponents = {
+    p: props => <p className="text-base text-gray-700 my-1" {...props} />,
+    h4: props => <h1 className="text-lg text-bold mb-1 font-sync" {...props} />,
+    h3: props => <h2 className="text-xl text-bold mb-1 font-sync" {...props} />,
+    h2: props => <h1 className="text-2xl text-bold mb-1 font-sync" {...props} />,
+    h1: props => <h1 className="text-3xl text-bold mb-1 font-sync" {...props} />,
+    code: props => <SyntaxHighlighter {...props} className="w-1/2 rounded-md" language="javascript" style={atomDark} />,
+  };
   if (pageProps.statusCode === 404) {
     return (
       <div className="relative min-h-screen py-10 px-14 w-full">

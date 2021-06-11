@@ -15,3 +15,27 @@ Optionally a placeholder prop can be provided, while still rendering well with t
 
 ## TextField as Text Area
 <TextField className="mt-2" type="textarea" label="Label for text-area" placeholder="This is a placeholder for a text-area"/>
+<br/>
+
+### Basic example
+
+```js
+import { useState } from "react";
+import { TextField } from "lite-react-ui";
+import "./styles.css";
+import "lite-react-ui/dist/style.css";
+
+export default function App() {
+  const [value, setValue] = useState("hello world");
+  return (
+    <div className="App">
+      <TextField
+        value={value}
+        onChange={(e) => {
+          setValue(e.target.value);
+        }}
+      />
+    </div>
+  );
+}
+```

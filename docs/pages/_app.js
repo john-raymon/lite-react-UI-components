@@ -13,11 +13,11 @@ function MyApp({ Component, pageProps}) {
   const router = useRouter();
   const tailwindcssStyledComponents = {
     p: props => <p className="text-base text-gray-700 my-1" {...props} />,
-    h4: props => <h1 className="text-lg text-bold mb-1 font-sync" {...props} />,
-    h3: props => <h2 className="text-xl text-bold mb-1 font-sync" {...props} />,
-    h2: props => <h1 className="text-2xl text-bold mb-1 font-sync" {...props} />,
-    h1: props => <h1 className="text-3xl text-bold mb-1 font-sync" {...props} />,
-    code: props => <SyntaxHighlighter {...props} className="w-1/2 rounded-md" language="javascript" style={atomDark} />,
+    h4: props => <h1 className="text-lg font-semibold mb-1 font-sync" {...props} />,
+    h3: props => <h2 className="text-xl font-semibold mb-1 font-sync" {...props} />,
+    h2: props => <h1 className="text-2xl font-semibold mb-1 font-sync" {...props} />,
+    h1: props => <h1 className="text-3xl font-semibold mb-1 font-sync" {...props} />,
+    code: props => <SyntaxHighlighter {...props} className="w-full lg:w-1/2 rounded-md" language="javascript" style={atomDark} />,
   };
   if (pageProps.statusCode === 404) {
     return (
@@ -33,10 +33,10 @@ function MyApp({ Component, pageProps}) {
       </Head>
       <div className="flex flex-col lg:flex-row justify-between w-full">
         <div>
-          <p className="font-sync text-7xl uppercase text-gray-900 py-4">
+          <p className="font-sync text-7xl uppercase text-gray-900 py-4 font-bold">
             lite-react-ui
           </p>
-          <p className="font-sync text-5xl w-full uppercase text-gray-800 pb-4">
+          <p className="font-sync text-5xl w-full uppercase text-gray-800 pb-4 font-semibold">
             LIGHT-WEIGHT REACT 
             <br/>
             COMPONENT LIBRARY

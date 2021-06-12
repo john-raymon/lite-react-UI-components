@@ -36,7 +36,7 @@ export function TextField2() {
 ## TextField as Text Area
 
 export function TextField3() {
-  const [textfieldValue, setTextFieldValue] = useState('蝹華華');
+  const [textfieldValue, setTextFieldValue] = useState('');
   return (
     <TextField className="mt-2" type="textarea" label="Label for text-area" placeholder="This is a placeholder for a text-area"  value={textfieldValue} onChange={(e) => setTextFieldValue(e.target.value)} />
   );

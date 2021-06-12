@@ -1,6 +1,6 @@
 {
   "name": "lite-react-ui",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/john-raymon/lite-react-UI-components",
   "author": "john-raymon",
   "repository": {
@@ -20,12 +20,17 @@
     }
   },
   "scripts": {
-    "dev": "vite example",
+    "dev": "yarn-or-npm dev:using_src",
+    "dev:using_src": "vite build && vite example",
+    "dev:using_dist": "vite build && VITE_NODE_ENV=USE_DIST vite example",
     "build": "vite build",
     "docs:dev": "cd docs && yarn-or-npm run dev",
     "docs:build": "cd docs && yarn-or-npm run build"
   },
   "dependencies": {
+    "concurrently": "^6.2.0",
+    "lite-react-ui": "^0.2.0",
+    "npm-watch": "^0.9.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
@@ -35,7 +40,7 @@
     "postcss-nested": "^5.0.4",
     "tailwind-override": "^0.0.7",
     "tailwindcss": "^2.0.3",
-    "vite": "^2.0.5",
+    "vite": "^2.3.7",
     "yarn-or-npm": "^3.0.1"
   }
 }

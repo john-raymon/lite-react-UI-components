@@ -2174,10 +2174,10 @@ lite-react-ui@^0.2.0:
     react "^17.0.0"
     react-dom "^17.0.0"
 
-lite-react-ui@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/lite-react-ui/-/lite-react-ui-0.2.1.tgz#87881ba233b34e4b7a6529022298a8883cd10988"
-  integrity sha512-Jxsl/oNR9D35ndet3XYNlEuB0LjzTBKGEjU5OGzx8KbpcdVfM0/PRZgz5bLjtSO0oKOkvWBBjFxZH0FP/0jUTg==
+lite-react-ui@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/lite-react-ui/-/lite-react-ui-0.2.2.tgz#c67ab08cec3bc3d82dcd07fd0f067f178d9accae"
+  integrity sha512-c2QVU9kPuT4Z3R6IEZi/NijAU9LhDJ9CJxmGXZvKu5pbkzfQEBi++iWBe+cyCTLashtZNHbJBSlazkEGzWgqQQ==
   dependencies:
     concurrently "^6.2.0"
     lite-react-ui "^0.2.0"

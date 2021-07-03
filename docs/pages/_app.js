@@ -71,9 +71,15 @@ function MyApp({ Component, pageProps}) {
         },
         {
           render: (props) => {
-            return (<Link href="/text-field"><a {...props}>{`Text Fields`}</a></Link>);
+            return (<Link href="/text-field"><a {...props}>Text Fields</a></Link>);
           },
           active: router.pathname === "/text-field"
+        },
+        {
+          render: (props) => {
+            return (<Link href="/buttons"><a {...props}>Buttons</a></Link>);
+          },
+          active: router.pathname === "/buttons"
         },
       ]} />
       <MDXProvider components={tailwindcssStyledComponents}>

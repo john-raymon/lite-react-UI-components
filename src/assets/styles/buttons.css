@@ -28,9 +28,9 @@
     &:not(:active):not(&--no-focus):focus:enabled {
       @apply twr-outline-none;
       /* offset 2px sides from increasing border-width of 0px to 2px */
-      background: #2F2F2F;
-      border-color: rgba(116, 116, 116, 0.69);;
-      box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.39);
+      background: #505050;
+      border-color: rgb(255 255 255 / 63%);
+      box-shadow: 0px 0px 9px rgb(255 255 255 / 10%);
     }
 
     &:active:enabled {
@@ -41,9 +41,9 @@
 
     &--focus {
       @apply twr-outline-none;
-      background: #2F2F2F;
-      border-color: rgba(116, 116, 116, 0.69);;
-      box-shadow: 0px 0px 9px rgba(255, 255, 255, 0.1);
+      background: #505050;
+      border-color: rgb(255 255 255 / 63%);
+      box-shadow: 0px 0px 9px rgb(255 255 255 / 10%);
     }
     &:disabled {
       box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.2);
@@ -57,8 +57,8 @@
 
     &:hover:enabled {
       @apply twr-outline-none;
-      background: #7e7e7e75;
-      border-color: #7e7e7e75;
+      background: #dedede;
+      border-color: transparent;
     }
 
     &:focus:enabled {

@@ -31,10 +31,16 @@ function App() {
           </Button>            
           <Button className="twr-font-bold">
             Sign up now 🏄🏽‍♂️
-          </Button>            
+          </Button>              
           <Button loading="true" disabled={true}>
             Test
-          </Button>            
+          </Button>    
+          <Button buttonType="secondary" loading className="twr-w-auto">
+            Test
+          </Button>
+          <Button buttonType="secondary" disabled className="twr-w-auto">
+            Test
+          </Button>
         </li>
         <li>
           <p>{`<Navigation> component:`}</p>

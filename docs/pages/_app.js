@@ -64,7 +64,7 @@ function MyApp({ Component, pageProps}) {
         </p>
       </div>
 
-    <Navigation onNavLinkClick={() => alert('clicked')} className="twr-sticky twr-top-0 twr-z-20 twr-mb-4" navLinks={[
+    <Navigation buttonTypes="primary" onNavLinkClick={() => alert('clicked')} className="twr-sticky twr-top-0 twr-z-20 twr-mb-4" navLinks={[
         {
           label: "Getting Started",
           onClick: () => goTo('/'),

@@ -11,12 +11,13 @@ export default function Button({
   buttonType = 'primary', 
   loading = false,
   loadingText = 'Loading...',
+  active = null, // for explicitlity forcing a focus state
   ...otherProps
 }) {
   return (
     <button 
       id={id} 
-      className={`twr-button twr-button__${buttonType} ${className}`}
+      className={`twr-button twr-button__${buttonType} ${active ? `twr-button__${buttonType}--focus` : (active === null ? '' : `twr-button__${buttonType}--no-focus`)} ${className}`}
       type={type}
       {...otherProps}      
     >

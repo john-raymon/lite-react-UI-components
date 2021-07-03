@@ -7,56 +7,95 @@ import { useState } from 'react';
 # Buttons
 
 The button component by default renders with a button type of
-"primary". The secondary, tertiary types are being developed.
+"primary". Tertiary button types are in development.
 
 <br/>
 
-<Button>
-  Hello World 🌍
-</Button>
+<div className="flex space-x-4">
+  <Button>
+    Hello World 🌍
+  </Button>
+
+  <Button buttonType="secondary">
+    Hello World 🌍
+  </Button>
+</div>
+
 
 ```js
 
   <Button>
     Hello World 🌍
   </Button>
+
+  <Button buttonType="secondary">
+    Hello World 🌍
+  </Button>
 ```
 
 <br/>
 
-<Button onClick={() => { alert('Thank you ☄️')}}>
-    Click me! 🙏🏾
-</Button>
+<div className="flex space-x-4">
+  <Button onClick={() => { alert('Thank you ☄️')}}>
+      Click me! 🙏🏾
+  </Button>
+
+  <Button buttonType="secondary" onClick={() => { alert('Thank you ☄️')}}>
+      Click me! 🙏🏾
+  </Button>
+</div>
 
 ```js
 
   <Button onClick={() => { alert('Thank you ☄️')}}>
     Click me! 🙏🏾
   </Button>
+
+  <Button buttonType="secondary" onClick={() => { alert('Thank you ☄️')}}>
+      Click me! 🙏🏾
+  </Button>
 ```
 
 <br/>
 
-<Button loading>
-  Pay Now 🤑
-</Button>
+<div className="flex space-x-4">
+  <Button loading>
+    Pay Now 🤑
+  </Button>
+  <Button buttonType="secondary" loading>
+    Pay Now 🤑
+  </Button>
+</div>
 
 ```js
 
   <Button loading>
     Pay Now 🤑
   </Button>
+
+  <Button buttonType="secondary" loading>
+    Pay Now 🤑
+  </Button>
 ```
 
 <br/>
 
-<Button disabled>
-  Checkout
-</Button>
+<div className="flex space-x-4">
+  <Button disabled>
+    Checkout
+  </Button>
+  <Button buttonType="secondary" disabled>
+    Checkout
+  </Button>
+</div>
 
 ```js
 
   <Button disabled>
+    Checkout
+  </Button>
+
+  <Button buttonType="secondary" disabled>
     Checkout
   </Button>
 ```

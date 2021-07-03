@@ -27,7 +27,7 @@ export default function TextField({ id = '', className = '', inputClassName = ''
           :
           (
             <input 
-              id="current-id"
+              id=""
               className={`text-field__input ${hasPlaceholder() ? 'text-field__input--has-placeholder' : 'text-field__input--has-no-placeholder'}`}
               type={type}
               value={value}
@@ -40,7 +40,7 @@ export default function TextField({ id = '', className = '', inputClassName = ''
         }
         <label
           className={`text-field__label`}
-          htmlFor="current-id"
+          htmlFor=""
         >
           { label }
         </label>

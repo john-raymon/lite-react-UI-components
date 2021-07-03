@@ -7,7 +7,7 @@ const overrideTW = (classes) => {
   return overrideTailwindClasses(classes, { prefix: "twr-" });
 }
 
-export default function Navigation({ LinkComponent, navLinks = [], className = '', onNavLinkClick, stacked = false, columns = false}) {
+export default function Navigation({ LinkComponent, navLinks = [], className = '', onNavLinkClick, stacked = false, columns = false, buttonTypes = "secondary"}) {
   // TODO : create a button component to be used here, which will receive it's inner copy as a non-children prop or children (slot)
   return (
     <nav className={`twr-navigation twr-max-w-full ${className}`}>
@@ -23,7 +23,7 @@ export default function Navigation({ LinkComponent, navLinks = [], className = '
                     )
                   :
                     (
-                      <Button onClick={onClick} className={`twr-w-full ${active ? 'twr-button__primary--focus' : 'twr-button__primary--no-focus'}`}>
+                      <Button onClick={onClick} buttonType={buttonTypes} className={`twr-w-full`} active={active}>
                         {
                           label
                         }

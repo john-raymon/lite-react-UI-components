@@ -1,7 +1,6 @@
 import '../styles/globals.css';
 import 'lite-react-ui/dist/style.css';
-// import {Navigation} from 'lite-react-ui';
-import {Navigation} from './../../dist/lite-react-ui.es';
+import {Navigation} from 'lite-react-ui';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 import {MDXProvider} from '@mdx-js/react'

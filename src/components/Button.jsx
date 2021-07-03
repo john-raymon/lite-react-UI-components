@@ -5,8 +5,7 @@ import Loading from './Loading';
 export default function Button({
   id = '',
   className = '',
-  inputClassName = '',
-  type = '',
+  type = 'submit',
   text = '',
   children = '',
   buttonType = 'primary', 
@@ -18,7 +17,6 @@ export default function Button({
     <button 
       id={id} 
       className={`twr-button twr-button__${buttonType} ${className}`}
-      inputClassName={inputClassName}
       type={type}
       {...otherProps}      
     >

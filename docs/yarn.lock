@@ -2181,10 +2181,22 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lite-react-ui@^0.2.6, lite-react-ui@^0.2.9:
+lite-react-ui@^0.2.6:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/lite-react-ui/-/lite-react-ui-0.2.9.tgz#187481374e463e52e31603342340c88679c75ede"
   integrity sha512-DJt4Q8M+8Avssjyy9qtYj6OQctHPG8JvXMjO5TixxiGL3mkZNqpnhNZgLHbO+pMnN6/SOAEq62wWP6sk81w+lA==
+  dependencies:
+    concurrently "^6.2.0"
+    lite-react-ui "^0.2.6"
+    npm-watch "^0.9.0"
+    postcss "^8.3.5"
+    react "^17.0.0"
+    react-dom "^17.0.0"
+
+lite-react-ui@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/lite-react-ui/-/lite-react-ui-0.3.0.tgz#8b8ed4075a570ab2320ed2e28c7ad1dc4f602356"
+  integrity sha512-7iJF7tSjmZ2C3t7gVGzptgnu2wqjS0CpLG5PQro7ytuEd4hDS9MbnDGcknXn/ceWCT1sCtapsTG8KcD30HyZGQ==
   dependencies:
     concurrently "^6.2.0"
     lite-react-ui "^0.2.6"

@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import 'lite-react-ui/dist/style.css';
-import {Navigation} from 'lite-react-ui';
+// import {Navigation} from 'lite-react-ui';
+import {Navigation} from './../../dist/lite-react-ui.es';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 import {MDXProvider} from '@mdx-js/react'
@@ -8,9 +9,11 @@ import Head from 'next/head'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-
 function MyApp({ Component, pageProps}) {
   const router = useRouter();
+  const goTo = (route) => {
+    router.push(route);
+  };
   const tailwindcssStyledComponents = {
     p: props => <p className="text-base text-gray-700 my-1" {...props} />,
     h4: props => <h1 className="text-lg font-semibold mb-1 font-sync" {...props} />,
@@ -64,21 +67,18 @@ function MyApp({ Component, pageProps}) {
 
     <Navigation onNavLinkClick={() => alert('clicked')} className="twr-sticky twr-top-0 twr-z-20 twr-mb-4" navLinks={[
         {
-          render: (props) => {
-            return (<Link href="/"><a {...props}>Getting Started</a></Link>);
-          },
+          label: "Getting Started",
+          onClick: () => goTo('/'),
           active: router.pathname === "/"
         },
         {
-          render: (props) => {
-            return (<Link href="/text-field"><a {...props}>Text Fields</a></Link>);
-          },
+          label: "Text-fields",
+          onClick: () => goTo('/text-field'),
           active: router.pathname === "/text-field"
         },
         {
-          render: (props) => {
-            return (<Link href="/buttons"><a {...props}>Buttons</a></Link>);
-          },
+          onClick: () => goTo('/buttons'),
+          label: "Buttons",
           active: router.pathname === "/buttons"
         },
       ]} />

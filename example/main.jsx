@@ -11,17 +11,11 @@ const _navLinks = [
   },
   {
     label: 'second one',
-    render: (props) => {
-      return (<a {...props} href="from-render-function" >testing one</a>)
-    },
     active: true,
   },
   {
     label: 'third one'
   },
-  {
-    label: 'third one'
-  }
 ]
 function App() {
   const [textValue, setTextValue] = useState('');

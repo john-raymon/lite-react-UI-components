@@ -2181,13 +2181,13 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lite-react-ui@^0.2.0, lite-react-ui@^0.2.5:
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/lite-react-ui/-/lite-react-ui-0.2.5.tgz#a9630c7c006239ab4a482fd1b8dabbcb10f8035a"
-  integrity sha512-qqUVDIf9/fNsvZ2zel+bAWVLP4YDVq9/WH8LCNohtki3PEeH2G2lWD/+MyBmhwylXck4cri04+PYDHaxXRukhA==
+lite-react-ui@^0.2.6, lite-react-ui@^0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/lite-react-ui/-/lite-react-ui-0.2.7.tgz#79109a5f8aa72a2862995510e9c73d9cad25a821"
+  integrity sha512-colppgn0Ju9fL1V+8AV+OCAUg9x2hm7nd55iEc9DrR16N59OKgB+ayeuuEUBAH00izlgtPdgSvc1EM5mnrrbKg==
   dependencies:
     concurrently "^6.2.0"
-    lite-react-ui "^0.2.0"
+    lite-react-ui "^0.2.6"
     npm-watch "^0.9.0"
     postcss "^8.3.5"
     react "^17.0.0"

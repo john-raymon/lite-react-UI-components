@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import ReactDOM from 'react-dom'
 import components from './buildOrSource';
 
-const { TextField, TextArea, Navigation } = components;
+const { TextField, TextArea, Navigation, Button } = components;
 
 const _navLinks = [
   {
@@ -30,6 +30,18 @@ function App() {
   return (
     <div className="twr-p-10">
       <ul class="twr-space-y-5">
+        <li className="twr-flex twr-space-x-4">
+          <p className="">{`<Button> component:`}</p>
+          <Button loading="true" className="twr-w-auto">
+            Test
+          </Button>            
+          <Button className="twr-font-bold">
+            Sign up now 🏄🏽‍♂️
+          </Button>            
+          <Button loading="true" disabled={true}>
+            Test
+          </Button>            
+        </li>
         <li>
           <p>{`<Navigation> component:`}</p>
           <Navigation onNavLinkClick={() => alert('clicked')} className="twr-sticky twr-top-0 twr-z-20 twr-mb-4" navLinks={_navLinks} />

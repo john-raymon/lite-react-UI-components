@@ -1,0 +1,37 @@
+.twr-button {
+  @apply twr-relative
+  twr-flex
+  twr-py-4
+  twr-px-8
+  twr-rounded-lg
+  twr-transition
+  twr-outline-none
+  twr-text-center;
+  &__primary {
+    @apply twr-outline-none;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    &:hover:enabled {
+      @apply twr-outline-none;
+      background: #ECECEC;
+      box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.04);
+    }
+    &:focus:enabled {
+      @apply twr-outline-none twr-border-2;
+      /* offset 2px sides from increasing border-width of 0px to 2px */
+      padding: calc(1rem - 2px) calc(2rem - 2px) calc(1rem - 2px) calc(2rem - 2px);
+      background: #ECECEC;
+      border-color: rgba(179, 179, 179, 0.26);
+      box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    }
+    &:active:enabled {
+      background: #FCFCFC;
+      border-color: rgba(178, 178, 178, 0.26);
+      box-shadow: none;
+    }
+    &:disabled {
+      @apply twr-cursor-not-allowed twr-opacity-50;
+      box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

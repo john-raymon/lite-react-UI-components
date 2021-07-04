@@ -11,7 +11,7 @@ The button component by default renders with a button type of
 
 <br/>
 
-<div className="flex space-x-4">
+<div className="flex flex-col space-y-2 twr-bg-grey-400">
   <Button>
     Hello World 🌍
   </Button>
@@ -19,6 +19,15 @@ The button component by default renders with a button type of
   <Button buttonType="secondary">
     Hello World 🌍
   </Button>
+
+  <Button buttonType="tertiary">
+    Hello World 🌍
+  </Button>
+  <div className="w-full bg-black py-3 px-1 rounded-lg">
+    <Button className="w-full" inverted buttonType="tertiary">
+      Hello World 🌍
+    </Button>
+  </div>
 </div>
 
 
@@ -29,6 +38,14 @@ The button component by default renders with a button type of
   </Button>
 
   <Button buttonType="secondary">
+    Hello World 🌍
+  </Button>
+
+  <Button buttonType="tertiary">
+    Hello World 🌍
+  </Button>
+
+  <Button inverted buttonType="tertiary">
     Hello World 🌍
   </Button>
 ```

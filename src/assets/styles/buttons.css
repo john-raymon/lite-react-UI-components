@@ -6,10 +6,53 @@
   twr-rounded-lg
   twr-transition
   twr-outline-none
+  twr-items-center
+  twr-justify-center
   twr-text-center
   twr-text-black;
   box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
   padding: calc(1rem - 2px) calc(2rem - 2px) calc(1rem - 2px) calc(2rem - 2px);
+  
+  &__tertiary {
+    @apply twr-bg-transparent twr-text-black twr-outline-none twr-border-2 twr-border-black;
+    
+    &--inverted {
+      @apply twr-text-white twr-border-white;
+
+      &:hover:enabled {
+        @apply twr-outline-none twr-text-black twr-bg-white twr-border-white;
+      }
+
+      &:not(:active):focus:enabled {
+        @apply twr-outline-none twr-text-black;
+        background: rgba(248, 248, 248, 0.9);
+        border: 2px solid #A9A9A9;
+      }
+
+      &:active:enabled {
+        @apply twr-outline-none twr-text-black;
+        background: rgba(142, 142, 142, 0.73);
+        border: 2px solid #B8B8B8;
+      }
+    }
+
+    &:not(&--inverted):not(:active):focus:enabled {
+      @apply twr-outline-none twr-text-white;
+      background: #414141;
+      border: 2px solid #000000;
+    }
+
+    &:not(&--inverted):active:enabled {
+      @apply twr-outline-none twr-text-white;
+      background: rgba(38, 38, 38, 0.93);
+      border: 2px solid #000000;
+    }
+
+    &:not(&--inverted):not(:focus):hover:enabled {
+      @apply twr-outline-none twr-text-white twr-bg-black;
+      border-color: #000000;
+    }
+  }
 
   &__secondary {
     @apply twr-bg-black twr-text-white twr-outline-none twr-border-2 twr-border-black;

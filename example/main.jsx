@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="twr-p-10">
       <ul class="twr-space-y-5">
-        <li className="twr-flex twr-space-x-4">
+        <li className="twr-flex twr-flex-col twr-space-x-4 twr-space-y-2 twr-flex-wrap">
           <p className="">{`<Button> component:`}</p>
           <Button loading="true" className="twr-w-auto">
             Test
@@ -41,6 +41,23 @@ function App() {
           <Button buttonType="secondary" disabled className="twr-w-auto">
             Test
           </Button>
+          <Button buttonType="tertiary" disabled className="twr-w-auto">
+            Test
+          </Button>
+          <Button buttonType="tertiary" className="twr-w-auto">
+            Test
+          </Button>
+          <Button buttonType="tertiary" loading className="twr-w-auto">
+            Test
+          </Button>
+          <div className="twr-flex twr-space-x-2 twr-bg-black twr-rounded-lg twr-p-2">
+            <Button inverted buttonType="tertiary" className="twr-w-auto">
+              Test
+            </Button>
+            <Button inverted buttonType="tertiary" loading className="twr-w-auto">
+              Test
+            </Button>
+          </div>
         </li>
         <li>
           <p>{`<Navigation> component:`}</p>

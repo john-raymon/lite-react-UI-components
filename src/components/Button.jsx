@@ -12,12 +12,13 @@ export default function Button({
   loading = false,
   loadingText = 'Loading...',
   active = null, // for explicitlity forcing a focus state
+  inverted = false,
   ...otherProps
 }) {
   return (
     <button 
       id={id} 
-      className={`twr-button twr-button__${buttonType} ${active ? `twr-button__${buttonType}--focus` : (active === null ? '' : `twr-button__${buttonType}--no-focus`)} ${className}`}
+      className={`twr-button twr-button__${buttonType} ${inverted ? `twr-button__tertiary--inverted` : ''}  ${active ? `twr-button__${buttonType}--focus` : (active === null ? '' : `twr-button__${buttonType}--no-focus`)} ${className}`}
       type={type}
       {...otherProps}      
     >

@@ -16,7 +16,7 @@ export default function TextField({ id = '', className = '', inputClassName = ''
           (
             <textarea 
               id="current-id" 
-              className={`text-field__input text-field__input--as-textarea ${hasPlaceholder() ? 'text-field__input--has-placeholder' : 'text-field__input--has-no-placeholder'}`}
+              className={`text-field__input text-field__input--as-textarea ${hasPlaceholder() ? 'text-field__input--has-placeholder' : 'text-field__input--has-no-placeholder'} ${inputClassName}`}
               value={value}
               onChange={onChange}
               disabled={disabled}
@@ -28,7 +28,7 @@ export default function TextField({ id = '', className = '', inputClassName = ''
           (
             <input 
               id=""
-              className={`text-field__input ${hasPlaceholder() ? 'text-field__input--has-placeholder' : 'text-field__input--has-no-placeholder'}`}
+              className={`text-field__input ${hasPlaceholder() ? 'text-field__input--has-placeholder' : 'text-field__input--has-no-placeholder'} ${inputClassName}`}
               type={type}
               value={value}
               onChange={onChange}
@@ -39,7 +39,7 @@ export default function TextField({ id = '', className = '', inputClassName = ''
           )
         }
         <label
-          className={`text-field__label`}
+          className={`text-field__label ${labelClassName}`}
           htmlFor=""
         >
           { label }

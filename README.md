@@ -15,7 +15,7 @@ import { TextField } from 'lite-react-ui';
   onChange={} 
 />
 ```
-## How to customize the default styles of a component.
+## How to customize the default styles of a component
 
 When overriding default styles we recommend using `!important` variants of [`Tailwindcss`](https://tailwindcss.com/docs/installation) util-classes. Preferably version 3 or later (or a version earlier than version 3 that supports JIT compiling) so that just-in-time compilation can be utilized to generate `!important` variants of a tailwind class on the fly that can then be used to override the default styles of a lite-react-ui component.
 
